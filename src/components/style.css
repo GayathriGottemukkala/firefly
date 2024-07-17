@@ -1,0 +1,174 @@
+/* home */
+:root{
+    --primaryfont-size:1rem ;
+    --secondaryfont-size:0.9rem;
+    --btn-width:137px;
+    --homefirsth:55vh;
+    --padd-btn:0.7rem;
+    --wid-conte:43%;
+    --thirdfont:15px;
+}
+
+@media screen and (max-width:1030px) {
+    :root{
+        --secondaryfont-size:0.5rem;
+     
+    }
+}
+
+@media screen and (max-width:800px) {
+    :root{
+        --primaryfont-size:0.6rem ;
+        --btn-width:130px;
+        --homefirsth:53vh;
+        --padd-btn:0.3rem;
+        --wid-conte:50%;
+        --secondaryfont-size:0.4rem;
+        --thirdfont:10px;
+    }
+}
+
+.home-card{
+    background-image: url("../images/imgcrac.png");
+    background-size: cover;;
+    height:var(--homefirsth);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.home-card nav{
+    background-color:rgba(20, 6, 6, 0.5);
+    padding: 10px;
+}
+.home-card nav img{
+    width:10%;
+}
+
+.home-card div{
+    padding: 20px;
+    color: aliceblue;
+    font-size:var(--primaryfont-size);
+    font-weight:200 ;
+    width: var(--wid-conte);
+}
+.home-card div button{
+  color: 
+  #FE0000;
+  background-color: aliceblue;
+  border: none;
+  padding: var(--padd-btn);
+  width: var(--btn-width);
+}
+.bottom-card{
+   
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 90%;
+}
+
+.about-card2{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    color: #F27121;
+    font-size: var( --secondaryfont-size);
+}
+.about-card2 img {
+    width:100%;
+    height:5px;
+}
+.about-card2 h1{
+    justify-self: center;
+}
+.about-card2-content{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+}
+
+.about-card2-content div {
+    font-size: var(--thirdfont);
+}
+.about-card2-content div span{
+    font-weight: bold;
+}
+.cards{
+    display: flex;
+    gap:30px;
+    padding: 10px;
+    justify-content: center;
+}
+.card{
+    overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 400px;
+}
+.card img {
+    width: 100%;
+  height: auto;
+}
+.card div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--secondaryfont-size);
+}
+.card div button{
+    background-color: #FE0000;
+    color: #CECECE;
+    padding: 5px;
+    font-size: var(--secondaryfont-size);
+    gap:10px;
+    border: none;
+}
+
+.bot-card img{
+justify-self: center;
+width: 100%;
+height:6px;
+}
+
+.bottom-bar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+}
+.bar-bot{
+    background-color: 
+    #25A769;
+    display: flex;
+    padding:5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar-bot div p{
+    text-align: center;
+}
+
+.img{
+    height:5%;
+}
+
+/* popup */
+.popup-overlay{
+    position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-overlay img {
+    width:50%;
+}
